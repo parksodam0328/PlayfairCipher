@@ -1,0 +1,10 @@
+c:\users\mirim\source\repos\정보보호\정보보호\bin\Debug\정보보호.exe.config
+c:\users\mirim\source\repos\정보보호\정보보호\bin\Debug\정보보호.exe
+c:\users\mirim\source\repos\정보보호\정보보호\bin\Debug\정보보호.pdb
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.csprojResolveAssemblyReference.cache
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.Form1.resources
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.Properties.Resources.resources
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.csproj.GenerateResource.cache
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.csproj.CoreCompileInputs.cache
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.exe
+c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.pdb
