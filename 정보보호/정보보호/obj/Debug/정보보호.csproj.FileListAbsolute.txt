@@ -8,3 +8,13 @@ c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.csp
 c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.csproj.CoreCompileInputs.cache
 c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.exe
 c:\users\mirim\source\repos\정보보호\정보보호\obj\Debug\정보보호.pdb
+D:\PlayfairCipher\정보보호\정보보호\bin\Debug\정보보호.exe.config
+D:\PlayfairCipher\정보보호\정보보호\bin\Debug\정보보호.exe
+D:\PlayfairCipher\정보보호\정보보호\bin\Debug\정보보호.pdb
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.csprojResolveAssemblyReference.cache
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.Form1.resources
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.Properties.Resources.resources
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.csproj.GenerateResource.cache
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.csproj.CoreCompileInputs.cache
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.exe
+D:\PlayfairCipher\정보보호\정보보호\obj\Debug\정보보호.pdb

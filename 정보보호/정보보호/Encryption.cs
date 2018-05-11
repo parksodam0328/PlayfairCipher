@@ -30,6 +30,10 @@ namespace 정보보호
 			List<char> addX = new List<char>(chr);
 			for (int i = 0; i < str2.Length; i += 2) // 평문을 두 글자씩 분리
 			{
+				if (str2.Length % 2 == 1)
+				{
+					plainText.Add(str2.Substring(str2.Length-1, 1));
+				}
 				plainText.Add(str2.Substring(i, 2));
 			}
 			for (int i = 0; i < str2.Length; i += 2)
@@ -49,7 +53,7 @@ namespace 정보보호
 			}
 			foreach (char iter in cipherKey)
 				alpTable += iter;
-			String res = MultipleEncryption(alpTable, real);
+			//String res = MultipleEncryption(alpTable, real);
 			return real;
 		}
 
@@ -61,7 +65,7 @@ namespace 정보보호
 			return result;
 		}
 
-		public string MultipleEncryption(string str1, string str2)
+		/*public string MultipleEncryption(string str1, string str2)
 		{
 			char[] str = str1.ToCharArray(0, str1.Length);
 			int row = 5, col = 5;
@@ -83,6 +87,6 @@ namespace 정보보호
 			//같은 행에 배치되어있으면
 			string result = "hello";
 			return result;
-		}
+		}*/
 	}
 }

@@ -5,3 +5,10 @@ c:\Users\Mirim\source\repos\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.cspro
 c:\Users\Mirim\source\repos\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 c:\Users\Mirim\source\repos\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 c:\Users\Mirim\source\repos\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\PlayfairCipher\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\PlayfairCipher\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\PlayfairCipher\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\PlayfairCipher\정보보호\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\PlayfairCipher\정보보호\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\PlayfairCipher\정보보호\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\PlayfairCipher\정보보호\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
