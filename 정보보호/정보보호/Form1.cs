@@ -41,8 +41,8 @@ namespace 정보보호
 				return;
 			}
 
-			textBox3.Text = encryption.MultipleCipher(textBox1.Text, textBox2.Text);
-			textBox4.Text = encryption.MultipleEncryption(textBox1.Text, textBox2.Text);
+			textBox3.Text = encryption.MultipleCipher(textBox1.Text, textBox2.Text, false);
+			textBox4.Text = encryption.Decryption(textBox1.Text, textBox3.Text, true);
 			
 		}
 	}
