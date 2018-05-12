@@ -31,9 +31,10 @@ namespace ConsoleApp1
 			foreach (char iter in cipherKey)
 			{
 				alpTable += iter;
+				
 			}
 			str += DivideLetter(str2, plainText, addX, alpTable);
-			Console.Write(str);
+			//Console.Write(str);
 			foreach (char iter in cipherKey)
 				alpTable += iter;
 			//String res = MultipleEncryption(alpTable, real);
@@ -125,17 +126,17 @@ namespace ConsoleApp1
 					list1.Add(str2.Substring(i, 2));
 				}
 			}
-
 			for (int i = 0; i < str2.Length; i += 2)
 			{
-				if (list2.Count % 2 != 0) // 평문의 길이가 홀수일 경우 마지막에 x를 추가
-				{
-					list2.Add('x');
-				}
+				
 				if (list2[i] == list2[i + 1])
 				{
 					list2.Insert(i + 1, 'x');
 				}
+			}
+			if (list2.Count % 2 != 0) // 평문의 길이가 홀수일 경우 마지막에 x를 추가
+			{
+				list2.Add('x');
 			}
 			int cnt = 1;
 			string res = "";
@@ -164,8 +165,8 @@ namespace ConsoleApp1
 static void Main(string[] args)
 		{
 			Program pr = new Program();
-			Console.WriteLine(pr.MultipleCipher("assassinator", "becarefulforassassinator"));
-			Console.WriteLine(pr.Decryption("assassinator", pr.MultipleCipher("assassinator", "becarefulforassassinator")));
+			//Console.WriteLine(pr.MultipleCipher("information", "happybirthday"));
+			Console.WriteLine(pr.Decryption("information", pr.MultipleCipher("information", "happybirthday")));
 		}
 	}
 }

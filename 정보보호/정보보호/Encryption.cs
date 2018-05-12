@@ -66,7 +66,7 @@ namespace 정보보호
 					{
 						element.Remove('q');
 					}
-					if (table[i, j] == 'q') // 암호키에 q가 포함되어있으면 z 값 삭제
+					else // 암호키에 q가 포함되어있으면 z 값 삭제
 					{
 						element.Remove('z');
 					}
@@ -147,14 +147,15 @@ namespace 정보보호
 			}
 			for (int i = 0; i < str2.Length; i += 2)
 			{
-				if (list2.Count % 2 != 0) // 평문의 길이가 홀수일 경우 마지막에 x를 추가
-				{
-					list2.Add('x');
-				}
+				
 				if (list2[i] == list2[i + 1])
 				{
 					list2.Insert(i + 1, 'x');
 				}
+			}
+			if (list2.Count % 2 != 0) // 평문의 길이가 홀수일 경우 마지막에 x를 추가
+			{
+				list2.Add('x');
 			}
 			int cnt = 1;
 			string res = "";
