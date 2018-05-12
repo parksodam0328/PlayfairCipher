@@ -73,7 +73,7 @@ namespace 정보보호
 				}
 			}
 			int frow = 0, fcol = 0, srow = 0, scol = 0;
-			for (int i = 0; i < row; i++) //평문 암호화(같은 열, 행에 있지 않을 경우)
+			for (int i = 0; i < row; i++) //평문 암호화
 			{
 				for (int j = 0; j < col; j++)
 				{
@@ -97,29 +97,30 @@ namespace 정보보호
 					scol = (scol + 1) % 5;
 					result += table[frow, fcol].ToString() + table[srow, scol].ToString();
 				}
-				else
+				else // 인덱스 값이 음수가 되면
 				{
-					fcol = ((fcol + 1)-2) % 5;
-					scol = ((scol + 1)-2) % 5;
+					fcol = ((fcol - 1) % 5)== -1 ? 4 : (fcol - 1);
+					scol = ((scol - 1) % 5)== -1 ? 4 : (scol - 1);
 					result += table[frow, fcol].ToString() + table[srow, scol].ToString();
 				}
 			}
 			else if (fcol == scol) //같은 열에 배치되어있으면
 			{
-				if (check == true)
+				if (check == false)
 				{
-					frow = (frow + 1) % 5;
-					srow = (srow + 1) % 5;
-					result += table[frow, fcol].ToString() + table[srow, scol].ToString();
+					frow = (frow +1)% 5;
+					srow = (srow +1)% 5;
+					
+					result += table[frow, fcol].ToString() + table[srow, scol].ToString(); 
 				}
 				else
 				{
-					frow = ((frow + 1)-2) % 5;
-					srow = ((srow + 1)-2) % 5;
+					frow = ((frow - 1) % 5) == -1 ? 4 : (frow - 1); // 인덱스 값이 음수가 되면
+					srow = ((srow - 1) % 5) == -1 ? 4 : (srow - 1);
 					result += table[frow, fcol].ToString() + table[srow, scol].ToString();
 				}
 			}
-			else
+			else //같은 열, 행에 있지 않을 경우
 			{
 				result += table[srow, fcol].ToString() + table[frow, scol].ToString();
 			}
@@ -144,7 +145,6 @@ namespace 정보보호
 					list1.Add(str2.Substring(i, 2));
 				}
 			}
-
 			for (int i = 0; i < str2.Length; i += 2)
 			{
 				if (list2.Count % 2 != 0) // 평문의 길이가 홀수일 경우 마지막에 x를 추가
@@ -168,15 +168,12 @@ namespace 정보보호
 				}
 				cnt++;
 			}
-			//Console.Write(str);
 			return res;
-
 		}
 		public string Decryption(string str1, string str2, bool check)
 		{
 			string decryption = MultipleCipher(str1, str2, check);
 			decryption = decryption.Replace("x", "");
-
 			return decryption;
 		}
 	}
